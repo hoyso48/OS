@@ -8,7 +8,6 @@ int main(int argc, char *argv[]) {
     MessageBuffer *buffer;
 
     pid = getpid();
-
     attach_buffer(&buffer);
     produce(&buffer, (int)pid, argv[1]);
 
